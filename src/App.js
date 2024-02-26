@@ -23,19 +23,19 @@ export default function App() {
       <h1>Login Page</h1>
       {isSubmitted ? (
         <div>
-          <p>Welcome, {username}</p>
+          <p>Welcome, {username}!</p>
         </div>
       ) : (
         <form onSubmit={handleSubmit}>
           {error && <p>{error}</p>}
           <div>
             <label htmlFor="username">
-              username:
+              Username:
             </label>
             <input
               id="username"
               type="text"
-              placeholder="username"
+               placeholder="Username"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
               required
@@ -46,7 +46,7 @@ export default function App() {
             <input
               id="password"
               type="password"
-              placeholder="password"
+               placeholder="Password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
